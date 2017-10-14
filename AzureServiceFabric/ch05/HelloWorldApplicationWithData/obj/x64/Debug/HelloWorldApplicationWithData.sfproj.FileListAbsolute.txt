@@ -1,0 +1,2 @@
+C:\Projects\Training\AzureServiceFabric\ch05\HelloWorldApplicationWithData\obj\x64\Debug\HelloWorldApplicationWithData.sfproj.CoreCompileInputs.cache
+C:\Projects\GitHub\Repos\programming-microsoft-azure-service-fabric-v1BookExamples\AzureServiceFabric\ch05\HelloWorldApplicationWithData\obj\x64\Debug\HelloWorldApplicationWithData.sfproj.CoreCompileInputs.cache

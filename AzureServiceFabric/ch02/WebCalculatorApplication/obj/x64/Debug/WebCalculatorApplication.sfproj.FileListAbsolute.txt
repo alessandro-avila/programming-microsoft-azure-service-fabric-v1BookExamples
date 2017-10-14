@@ -1,0 +1,4 @@
+C:\Projects\Training\AzureServiceFabric\ch02\WebCalculatorApplication\obj\x64\Debug\WebCalculatorApplication.sfprojResolveAssemblyReference.cache
+C:\Projects\Training\AzureServiceFabric\ch02\WebCalculatorApplication\obj\x64\Debug\WebCalculatorApplication.sfproj.CoreCompileInputs.cache
+C:\Projects\GitHub\Repos\programming-microsoft-azure-service-fabric-v1BookExamples\AzureServiceFabric\ch02\WebCalculatorApplication\obj\x64\Debug\WebCalculatorApplication.sfprojResolveAssemblyReference.cache
+C:\Projects\GitHub\Repos\programming-microsoft-azure-service-fabric-v1BookExamples\AzureServiceFabric\ch02\WebCalculatorApplication\obj\x64\Debug\WebCalculatorApplication.sfproj.CoreCompileInputs.cache

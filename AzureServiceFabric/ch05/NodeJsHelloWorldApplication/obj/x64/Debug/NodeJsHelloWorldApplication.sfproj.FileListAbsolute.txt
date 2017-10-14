@@ -1,0 +1,2 @@
+C:\Projects\Training\AzureServiceFabric\ch05\NodeJsHelloWorldApplication\obj\x64\Debug\NodeJsHelloWorldApplication.sfproj.CoreCompileInputs.cache
+C:\Projects\GitHub\Repos\programming-microsoft-azure-service-fabric-v1BookExamples\AzureServiceFabric\ch05\NodeJsHelloWorldApplication\obj\x64\Debug\NodeJsHelloWorldApplication.sfproj.CoreCompileInputs.cache
