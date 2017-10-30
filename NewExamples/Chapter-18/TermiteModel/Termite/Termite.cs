@@ -43,9 +43,22 @@ namespace Termite
         public Task<TermiteState> GetStateAsync()
         {
             var state = this.StateManager.TryGetStateAsync<TermiteState>(actorStateName);
-            if (state.Result.HasValue)
+            if (state != null && state.Result.HasValue)
                 return Task.FromResult(state.Result.Value);
-            return null;
+            return Task.FromResult<TermiteState>(null);
+        }
+
+        public Task SetStateAsync<T>(T state)
+        {
+            try
+            {
+                this.StateManager.SetStateAsync<T>(actorStateName, state);
+            }
+            catch (Exception)
+            {
+                return Task.FromResult(false);
+            }
+            return Task.FromResult(true);
         }
 
         /// <summary>
@@ -56,8 +69,7 @@ namespace Termite
         {
             ActorEventSource.Current.ActorMessage(this, "Actor activated.");
 
-            var state = this.StateManager.TryGetStateAsync<TermiteState>(actorStateName);
-            if (state.Result.HasValue == false)
+            if (this.GetStateAsync().Result == null)
             {
                 this.StateManager.SetStateAsync(actorStateName, new TermiteState()
                 {
@@ -65,7 +77,8 @@ namespace Termite
                     Y = rand.Next(0, size),
                     HasWoodChip = false
                 });
-                state = this.StateManager.TryGetStateAsync<TermiteState>(actorStateName);
+
+                var state = this.GetStateAsync().Result;
                 mTimer = RegisterTimer(Move, state, TimeSpan.FromSeconds(1), TimeSpan.FromMilliseconds(50));
             }
 
@@ -85,39 +98,42 @@ namespace Termite
             return base.OnDeactivateAsync();
         }
 
-        private async Task Move(object val)
+        private async Task Move(object state)
         {
-            IBox boxClient = ServiceProxy.Create<IBox>(new Uri("fabric:/TermiteModel/Box"));
-            var state = await this.GetStateAsync();
+            TermiteState tState = state as TermiteState;
 
-            if (!state.HasWoodChip)
+            IBox boxClient = ServiceProxy.Create<IBox>(new Uri("fabric:/TermiteModel/Box"),
+                new Microsoft.ServiceFabric.Services.Client.ServicePartitionKey(rand.Next()));
+
+            if (!tState.HasWoodChip)
             {
-                var result = await boxClient.TryPickUpWoodChipAsync(state.X, state.Y);
+                var result = await boxClient.TryPickUpWoodChipAsync(tState.X, tState.Y);
                 if (result)
                 {
-                    state.HasWoodChip = true;
+                    tState.HasWoodChip = true;
                 }
             }
             else
             {
-                var result = await boxClient.TryPutDownWoodChipAsync(state.X, state.Y);
+                var result = await boxClient.TryPutDownWoodChipAsync(tState.X, tState.Y);
                 if (result)
                 {
-                    state.HasWoodChip = false;
+                    tState.HasWoodChip = false;
                 }
             }
 
             int action = rand.Next(1, 9);
             //1-left; 2-left-up; 3-up; 4-up-right; 5-right: 6-right-down; 7-down; 8-down-left
-            if ((action == 1 || action == 2 || action == 8) && state.X > 0)
-                state.X = state.X - 1;
-            if ((action == 4 || action == 5 || action == 6) && state.X < size - 1)
-                state.X = state.X + 1;
-            if ((action == 2 || action == 3 || action == 4) && state.Y > 0)
-                state.Y = state.Y - 1;
-            if ((action == 6 || action == 7 || action == 8) && state.Y < size - 1)
-                state.Y = state.Y + 1;
+            if ((action == 1 || action == 2 || action == 8) && tState.X > 0)
+                tState.X = tState.X - 1;
+            if ((action == 4 || action == 5 || action == 6) && tState.X < size - 1)
+                tState.X = tState.X + 1;
+            if ((action == 2 || action == 3 || action == 4) && tState.Y > 0)
+                tState.Y = tState.Y - 1;
+            if ((action == 6 || action == 7 || action == 8) && tState.Y < size - 1)
+                tState.Y = tState.Y + 1;
 
+            await this.SetStateAsync(state);
             await this.SaveStateAsync();
         }
     }

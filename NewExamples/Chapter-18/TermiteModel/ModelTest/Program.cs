@@ -16,24 +16,27 @@ namespace ModelTest
     {
         static void Main(string[] args)
         {
-            Random rand = new Random();
-            Console.ReadLine();
+            // Stateful Reliable Service PartitionKey generator.
+            Random pKey = new Random(Guid.NewGuid().GetHashCode());
+
             int size = 100;
             int termites = 75;
 
-            IBox boxClient = ServiceProxy.Create<IBox>(new Uri("fabric:/TermiteModel/Box"));
+            IBox boxClient = ServiceProxy.Create<IBox>(new Uri("fabric:/TermiteModel/Box"),
+                new Microsoft.ServiceFabric.Services.Client.ServicePartitionKey(pKey.Next()));
+
             boxClient.ResetBox().Wait();
 
             ITermite[] proxies = new ITermite[termites];
             for (int i = 0; i < proxies.Length; i++)
             {
                 proxies[i] = ActorProxy.Create<ITermite>(new ActorId(i), new Uri("fabric:/TermiteModel/TermiteActorService"));
-                proxies[i].GetStateAsync();
             }
+
             while (true)
             {
                 var box = boxClient.ReadBox().Result;
-                Console.ForegroundColor = ConsoleColor.DarkBlue;
+                Console.ForegroundColor = ConsoleColor.Cyan;
 
                 for (int y = 0; y < size; y++)
                 {
