@@ -28,3 +28,13 @@
 /AzureServiceFabric/packages/Microsoft.AspNet.WebApi.Owin.5.2.3
 /AzureServiceFabric/packages/Microsoft.AspNet.WebApi.Core.5.2.3
 /AzureServiceFabric/packages/Microsoft.AspNet.WebApi.Client.5.2.3
+/NewExamples/Chapter-18/TermiteModel/.vs/TermiteModel/v15
+/NewExamples/Chapter-18/SpatialSegregationModel/packages/Microsoft.VisualStudio.Azure.Fabric.MSBuild.1.6.2
+/NewExamples/Chapter-18/SpatialSegregationModel/packages/Microsoft.ServiceFabric.Services.Remoting.2.8.219
+/NewExamples/Chapter-18/SpatialSegregationModel/packages/Microsoft.ServiceFabric.Services.2.8.219
+/NewExamples/Chapter-18/SpatialSegregationModel/packages/Microsoft.ServiceFabric.FabricTransport.Internal.2.8.219
+/NewExamples/Chapter-18/SpatialSegregationModel/packages/Microsoft.ServiceFabric.Diagnostics.Internal.2.8.219
+/NewExamples/Chapter-18/SpatialSegregationModel/packages/Microsoft.ServiceFabric.Data.2.8.219
+/NewExamples/Chapter-18/SpatialSegregationModel/packages/Microsoft.ServiceFabric.Actors.2.8.219
+/NewExamples/Chapter-18/SpatialSegregationModel/packages/Microsoft.ServiceFabric.6.0.219
+/NewExamples/Chapter-18/SpatialSegregationModel/.vs/ActorSwarmApplication/v15/sqlite3

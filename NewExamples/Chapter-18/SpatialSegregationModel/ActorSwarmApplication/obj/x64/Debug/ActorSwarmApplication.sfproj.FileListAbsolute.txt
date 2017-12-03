@@ -1,0 +1,1 @@
+C:\Projects\GitHub\Repos\programming-microsoft-azure-service-fabric-v1BookExamples\NewExamples\Chapter-18\SpatialSegregationModel\ActorSwarmApplication\obj\x64\Debug\ActorSwarmApplication.sfproj.CoreCompileInputs.cache
