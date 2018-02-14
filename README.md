@@ -2,7 +2,6 @@
 ### A repository containing the working examples taken from the Haishi Bai's book "Programming Microsoft Azure Service Fabric" (2016).
 
 Since each project refers to the latest Service Fabric SDK at the time of the development, the source code could slightly differ from the original ones in the book, in order to leverage on the latest-and-greatest features of the framework.
-The first **5** chapters are available at the moment. The rest is coming soon.
 
 Content structure:<br />
 AzureServiceFabric (.sln - 24 solution projects)<br />
@@ -35,3 +34,8 @@ AzureServiceFabric (.sln - 24 solution projects)<br />
 	- HelloWorldServiceWithData<br />
 	- NodeApp<br />
 	- NodeJsHelloWorldApplication
+	
+NewExamples (2 solutions)<br />
+- Chapter-18<br />
+	- TermiteModel<br />
+	- SpatialSegregationModel<br />
