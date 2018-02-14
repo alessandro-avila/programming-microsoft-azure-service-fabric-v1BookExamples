@@ -1,4 +1,0 @@
-C:\Projects\Training\AzureServiceFabric\ch03\SimpleStoreApplication\obj\x64\Debug\SimpleStoreApplication.sfprojResolveAssemblyReference.cache
-C:\Projects\Training\AzureServiceFabric\ch03\SimpleStoreApplication\obj\x64\Debug\SimpleStoreApplication.sfproj.CoreCompileInputs.cache
-C:\Projects\GitHub\Repos\programming-microsoft-azure-service-fabric-v1BookExamples\AzureServiceFabric\ch03\SimpleStoreApplication\obj\x64\Debug\SimpleStoreApplication.sfprojResolveAssemblyReference.cache
-C:\Projects\GitHub\Repos\programming-microsoft-azure-service-fabric-v1BookExamples\AzureServiceFabric\ch03\SimpleStoreApplication\obj\x64\Debug\SimpleStoreApplication.sfproj.CoreCompileInputs.cache

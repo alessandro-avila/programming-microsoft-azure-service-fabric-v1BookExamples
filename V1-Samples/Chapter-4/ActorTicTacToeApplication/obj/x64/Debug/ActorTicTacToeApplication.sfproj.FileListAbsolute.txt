@@ -1,0 +1,4 @@
+C:\Projects\Training\AzureServiceFabric\ch04\ActorTicTacToeApplication\obj\x64\Debug\ActorTicTacToeApplication.sfproj.CoreCompileInputs.cache
+C:\Projects\GitHub\Repos\programming-microsoft-azure-service-fabric-v1BookExamples\AzureServiceFabric\ch04\ActorTicTacToeApplication\obj\x64\Debug\ActorTicTacToeApplication.sfproj.CoreCompileInputs.cache
+C:\Projects\GitHub\Repos\programming-microsoft-azure-service-fabric-v1BookExamples\V1-Samples\ch04\ActorTicTacToeApplication\obj\x64\Debug\ActorTicTacToeApplication.sfproj.CoreCompileInputs.cache
+C:\Projects\GitHub\Repos\programming-microsoft-azure-service-fabric-v1BookExamples\V1-Samples\Chapter-4\ActorTicTacToeApplication\obj\x64\Debug\ActorTicTacToeApplication.sfproj.CoreCompileInputs.cache

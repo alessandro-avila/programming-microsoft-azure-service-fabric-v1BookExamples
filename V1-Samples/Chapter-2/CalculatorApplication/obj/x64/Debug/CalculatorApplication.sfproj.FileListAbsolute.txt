@@ -1,0 +1,8 @@
+C:\Projects\Training\AzureServiceFabric\ch02\CalculatorApplication\obj\x64\Debug\CalculatorApplication.sfprojResolveAssemblyReference.cache
+C:\Projects\Training\AzureServiceFabric\ch02\CalculatorApplication\obj\x64\Debug\CalculatorApplication.sfproj.CoreCompileInputs.cache
+C:\Projects\GitHub\Repos\programming-microsoft-azure-service-fabric-v1BookExamples\AzureServiceFabric\ch02\CalculatorApplication\obj\x64\Debug\CalculatorApplication.sfprojResolveAssemblyReference.cache
+C:\Projects\GitHub\Repos\programming-microsoft-azure-service-fabric-v1BookExamples\AzureServiceFabric\ch02\CalculatorApplication\obj\x64\Debug\CalculatorApplication.sfproj.CoreCompileInputs.cache
+C:\Projects\GitHub\Repos\programming-microsoft-azure-service-fabric-v1BookExamples\V1-Samples\ch02\CalculatorApplication\obj\x64\Debug\CalculatorApplication.sfprojResolveAssemblyReference.cache
+C:\Projects\GitHub\Repos\programming-microsoft-azure-service-fabric-v1BookExamples\V1-Samples\ch02\CalculatorApplication\obj\x64\Debug\CalculatorApplication.sfproj.CoreCompileInputs.cache
+C:\Projects\GitHub\Repos\programming-microsoft-azure-service-fabric-v1BookExamples\V1-Samples\Chapter-2\CalculatorApplication\obj\x64\Debug\CalculatorApplication.sfprojResolveAssemblyReference.cache
+C:\Projects\GitHub\Repos\programming-microsoft-azure-service-fabric-v1BookExamples\V1-Samples\Chapter-2\CalculatorApplication\obj\x64\Debug\CalculatorApplication.sfproj.CoreCompileInputs.cache
